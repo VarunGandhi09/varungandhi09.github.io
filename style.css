@@ -155,3 +155,27 @@ body{
   .nav-toggle{ display:inline-block }
   .nav-actions .nav-cta{ display:none }
 }
+
+/* Panel grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Project cards */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+/* Action buttons inside cards */
+.actions { margin-top: .25rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+.btn.small { padding: .5rem .8rem; font-size: .9rem; border-radius: 8px; }
+.btn.ghost { background: transparent; border: 1px solid #2e8b57; color: #2e8b57; }
+.btn.ghost:hover { background: #2e8b57; color: #fff; }
